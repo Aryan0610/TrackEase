@@ -1,0 +1,354 @@
+.DashboardContainer {
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--bgColor);
+}
+
+.SidePanelContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 40px 40px;
+
+    background-color: var(--white);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.BrandName_TaskSections_Container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    width: 100%;
+}
+
+.BrandName {
+    margin-bottom: 80px;
+}
+
+.TaskSectionsContainer {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+    width: 100%;
+    height: 60%;
+
+    overflow: scroll;
+}
+
+.TaskSectionsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.SidePanelButtonContainer {
+    margin-top: 20px;
+
+    width: 100%;
+}
+
+.sidePanelBtn {
+    background: none;
+    outline: none;
+    border: none;
+
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+
+    padding: 10px 20px;
+    margin: 5px 0px;
+
+    width: 100%;
+
+    background-color: var(--bgColor);
+    border: 2px solid var(--bgColor);
+    color: var(--black);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.6s all;
+}
+
+.sidePanelBtn:hover {
+    border: 2px solid var(--teal);
+
+    transition: 0.6s all;
+}
+
+.sidePanelBtn.LogOutBtn {
+    color: var(--red);
+}
+
+.sidePanelBtn.LogOutBtn:hover {
+    border: 2px solid var(--red);
+}
+
+.sidePanelBtn.AddSection:hover {
+    border: 2px solid var(--black);
+}
+
+.taskSectionBtn {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.taskSectionBtn button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.taskSectionBtn .NotVisible {
+    visibility: hidden;
+} 
+
+.taskSectionBtn:hover .NotVisible {
+    visibility: visible;
+
+    cursor: pointer;
+}
+
+.selectedTaskSectionBtn {
+    background-color: var(--teal);
+    color: var(--white);
+
+    border: 2px solid var(--teal);
+}
+
+.AddSectionTextareaContainer {
+    display: flex;
+    flex-direction: column;
+
+    padding: 10px 20px;
+
+    align-items: center;
+
+    background-color: var(--bgColor);
+    border-radius: 10px;
+}
+
+.AddSectionTextareaContainer textarea {
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+
+    border-bottom: 2px solid var(--black);
+
+    color: var(--black);
+
+    margin-bottom: 10px;
+
+    width: 90%;
+}
+
+.AddSectionTextareaContainer textarea::-webkit-scrollbar {
+    display: none;
+}
+
+.AddSectionBtnContainer {
+    width: 100%;
+}
+
+.AddSectionBtnContainer button {
+    background: none;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}
+
+/**main dashboard container**/
+.AddTaskBtn {
+    position: absolute;
+
+    right: 40px;
+    bottom: 40px;
+
+    background: none;
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+}
+
+.AddTaskPanelBg {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0.2;
+
+    z-index: 2;
+
+    background-color: #424242;
+}
+
+.AddTaskPanel {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+
+    padding: 60px 40px;
+
+    width: 30%;
+
+    z-index: 4;
+
+    border-radius: 10px 0px 0px 10px;
+
+    background-color: var(--bgColor);
+    color: var(--black);
+}
+
+.AddTaskPanelTextarea {
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+
+    padding: 20px;
+    margin: 40px 20px;
+
+    background-color: var(--white);
+    color: var(--black);
+
+    border-radius: 10px;
+
+    width: 90%;
+
+    resize: none;
+}
+
+.AddTaskPanelTextarea::-webkit-scrollbar {
+    display: none;
+}
+
+.AddTaskPanelBtnContainer {
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+}
+
+.AddTaskPanelBtn {
+    background: none;
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+
+    padding: 10px 20px;
+    margin-left: 10px;
+
+    background-color: var(--white);
+    color: var(--black);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.AddTaskPanelBtn.Add {
+    background-color: var(--teal);
+}
+
+.MainDashboardHeader {
+    margin: 40px;
+
+    background-color: var(--white);
+
+    border-radius: 10px;
+}
+
+.MainDashboardTaskSectionAsTitle {
+    padding: 20px 40px;
+
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+
+    background-color: var(--black);
+    color: var(--white);
+
+    border-radius: 10px;
+}
+
+.MainDashboardTasks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+    padding: 20px 40px;
+}
+
+.MainDashboardTasksComponent {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Montserrat';
+    
+    padding: 10px 20px;
+
+    align-items: center;
+
+    border: 2px solid var(--black);
+    border-radius: 10px;
+}
+
+.MainDashboardTasksComponent div {
+    display: flex;
+    column-gap: 10px;
+    
+    align-items: center;
+}
+  
+.MainDashboardTasksComponent button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.Underline {
+    color: red;
+}

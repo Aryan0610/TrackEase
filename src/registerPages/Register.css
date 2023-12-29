@@ -1,0 +1,111 @@
+.RegisterContainer {
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    font-family: 'Montserrat';
+
+    background-color: var(--teal);
+}
+
+.RegisterComponent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    align-items: center;
+
+    padding: 80px;  
+}
+
+.LeftSide {
+    background-color: var(--teal);
+}
+
+.RightSide {
+    background-color: var(--bgColor);
+    color: var(--black);
+
+    padding: 80px 120px;
+
+    border-radius: 10px 0px 0px 10px;
+}
+
+.RightSideTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.RightSideForm {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.RightSideForm input {
+    background: none;
+    border: none;
+    outline: none;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    padding: 10px 20px;
+    margin: 10px 0px;
+
+    border: 2px solid var(--black);
+    border-radius: 10px;
+}
+
+.RightSideForm button {
+    background: none;
+    border: none;
+    outline: none;
+
+    font-size: 18px;
+    font-weight: 500;
+
+    padding: 10px 20px;
+    margin-top: 10px;
+
+    width: fit-content;
+
+    background-color: var(--black);
+    color: var(--bgColor);
+
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.RightSideLinkToAnotherPage {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.RightSideLinkToAnotherPage a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.RightSideError {
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--red);
+}
+
+.RightSideError.NotVisible {
+    visibility: hidden;
+}   
